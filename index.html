@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="Js/app.js" type="module"></script>
+    <title>Hex Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container nav  ">
+        <div class="nav__logo">
+          <img src="img/logo.png" alt="HexShop logo" class="nav__logo__img" />
+        </div>
+      
+        <div class="nav__menu">
+          <ul class="nav__menu__items">
+            <li class="nav__menu__items__item">
+              <a class="nav__menu__items__link link--highlight" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav__menu__items__item">
+              <a class="nav__menu__items__link" href="#">Men's</a>
+            </li>
+            <li class="nav__menu__items__item">
+              <a class="nav__menu__items__link" href="#">Women's</a>
+            </li>
+            <li class="nav__menu__items__item">
+              <a class="nav__menu__items__link" href="#">Kid's</a>
+            </li>
+            <li class="nav__menu__items__item sub-menu-container pages">
+              <a
+                class="nav__menu__items__link sub-menu-container__link"
+                href="#"
+                >Pages <i class="fa-solid fa-angle-down"></i></a
+              >
+              <ul class="sub-menu-child">
+                <li class="sub-menu__link">
+                  <a href="#">About Us</a>
+                </li>
+                <li class="sub-menu__link">
+                  <a href="#">Products</a>
+                </li>
+                <li class="sub-menu__link">
+                  <a href="#">Single Product</a>
+                </li>
+                <li class="sub-menu__link">
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__menu__items__item sub-menu-container ">
+              <a class="nav__menu__items__link" href="#">Features 
+                <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="sub-menu-child">
+                <li class="sub-menu__link">
+                  <a href="#">Feature 1</a>
+                </li>
+                <li class="sub-menu__link">
+                  <a href="#">Feature 2</a>
+                </li>
+                <li class="sub-menu__link">
+                  <a href="#">Feature 3</a>
+                </li>
+                <li class="sub-menu__link">
+                  <a href="#">Feature 4</a>
+                </li>
+            
+              </ul>
+            </li>
+            <li class="nav__menu__items__item">
+              <a class="nav__menu__items__link link--highlight" href="#"
+                >Explore</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="nav__menu--mobile" >
+          <div class="hamburger hamburger--spin  ">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+        </div>
+       <div class="nav__mobile__menu-main">
+        <ul class="nav__menu__items">
+          <li class="nav__menu__items__item">
+            <a class="nav__menu__items__link link--highlight" href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav__menu__items__item">
+            <a class="nav__menu__items__link" href="#">Men's</a>
+          </li>
+          <li class="nav__menu__items__item">
+            <a class="nav__menu__items__link" href="#">Women's</a>
+          </li>
+          <li class="nav__menu__items__item">
+            <a class="nav__menu__items__link" href="#">Kid's</a>
+          </li>
+          <li class="nav__menu__items__item sub-menu-container pages">
+            <a
+              class="nav__menu__items__link sub-menu-container__link"
+              href="#"
+              >Pages <i class="fa-solid fa-angle-down"></i></a
+            >
+            <ul class="sub-menu-child">
+              <li class="sub-menu__link">
+                <a href="#">About Us</a>
+              </li>
+              <li class="sub-menu__link">
+                <a href="#">Products</a>
+              </li>
+              <li class="sub-menu__link">
+                <a href="#">Single Product</a>
+              </li>
+              <li class="sub-menu__link">
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__menu__items__item sub-menu-container ">
+            <a class="nav__menu__items__link" href="#">Features 
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <ul class="sub-menu-child">
+              <li class="sub-menu__link">
+                <a href="#">Feature 1</a>
+              </li>
+              <li class="sub-menu__link">
+                <a href="#">Feature 2</a>
+              </li>
+              <li class="sub-menu__link">
+                <a href="#">Feature 3</a>
+              </li>
+              <li class="sub-menu__link">
+                <a href="#">Feature 4</a>
+              </li>
+          
+            </ul>
+          </li>
+          <li class="nav__menu__items__item">
+            <a class="nav__menu__items__link link--highlight" href="#"
+              >Explore</a
+            >
+          </li>
+        </ul>
+       </div>
+        </div>
+      </nav>
+    </header>
+    <hr />
+    <main class="main ">
+      <section class="banner container-fluid">
+        <div class="banner__content--left">
+          <div class="thumb">
+            <img src="img/left-banner-image.jpg" alt="" />
+            <div class="thumb__text">
+              <h1 class="thumb__text__header">We Are HexaShop</h1>
+              <p class="thumb__text__describtion">
+                Awesome, clean & creative HTML5 Template
+              </p>
+              <a href="#" class="thumb__text__link">Purchase now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="banner__content--right">
+          <div class="thumb">
+            <img src="img/baner-right-image-01.jpg" alt="" />
+            <div class="thumb__text">
+              <h2 class="thumb__text__header">Women</h2>
+              <p class="thumb__text__describtion">Best Clothes For Women</p>
+            </div>
+            <div class="thumb__content--hover">
+              <h2 class="thumb__text__header">Women</h2>
+              <button class="thumb__button--more btn-reset">Discover more!</button>
+            </div>
+          </div>
+          <div class="thumb">
+            <img src="img/baner-right-image-02.jpg" alt="" />
+            <div class="thumb__text">
+              <h2 class="thumb__text__header">Men</h2>
+              <p class="thumb__text__describtion">Best Clothes For Men</p>
+            </div>
+            <div class="thumb__content--hover">
+              <h2 class="thumb__text__header">Men</h2>
+              <button class="thumb__button--more btn-reset">Discover more!</button>
+            </div>
+          </div>
+          <div class="thumb">
+            <img src="img/baner-right-image-03.jpg" alt="" />
+            <div class="thumb__text">
+              <h2 class="thumb__text__header">Kids</h2>
+              <p class="thumb__text__describtion">Best Clothes For Kids</p>
+            </div>
+            <div class="thumb__content--hover">
+              <h2 class="thumb__text__header">Kids</h2>
+              <button class="thumb__button--more btn-reset">Discover more!</button>
+            </div>
+          </div>
+          <div class="thumb">
+            <img src="img/baner-right-image-04.jpg" alt="" />
+            <div class="thumb__text">
+              <h2 class="thumb__text__header">Accessories</h2>
+              <p class="thumb__text__describtion">Best Trend Accessories</p>
+            </div>
+            <div class="thumb__content--hover">
+              <h2 class="thumb__text__header">Accessories</h2>
+
+              <button class="thumb__button--more btn-reset">Discover more!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="product mens container ">
+        <h2 class="product__title">Men's Latest</h2>
+        <p class="product__subtitle subtitle--highlight">Details to details is what makes Hexashop different from the other themes.</p>
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">  
+      <div class="product-card">
+      <img src="img/men-01.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/men-02.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/men-03.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/men-01.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/men-02.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/men-03.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/men-01.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/men-02.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div class="swiper-slide"> 
+      <div class="product-card">
+      <img src="img/men-03.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="swiper-button-prev  swiper-arrows-customize"></div>
+<div class="swiper-button-next swiper-arrows-customize"></div>
+
+</div>
+
+</div>
+      </section>
+      <hr>
+      <section class="product women container">
+        <h2 class="product__title">Women's Latest</h2>
+        <p class="product__subtitle subtitle--highlight">Details to details is what makes Hexashop different from the other themes.</p>
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">  
+      <div class="product-card">
+      <img src="img/women-01.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/women-02.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/women-03.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/women-01.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/women-02.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/women-03.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/women-01.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/women-02.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div class="swiper-slide"> 
+      <div class="product-card">
+      <img src="img/women-03.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="swiper-button-prev swiper-arrows-customize"></div>
+  <div class="swiper-button-next swiper-arrows-customize"></div>
+</div>
+
+
+      </section>
+      <hr>
+      <section class="product women container">
+        <h2 class="product__title">Kid's Latest</h2>
+        <p class="product__subtitle subtitle--highlight">Details to details is what makes Hexashop different from the other themes.</p>
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">  
+                <div class="product-card">
+                <img src="img/kid-01.jpg" class="product-card__img" alt="men">
+                <div class="product-card__details">
+                  <h1 class="product-card__details__header">Classic Spring</h1>
+                  <span class="product-card__details__price">90.99$</span>
+                  <ul class="product-card__details__rate">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                  </ul>
+                </div>
+    </div>
+    </div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/kid-02.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/kid-03.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/kid-01.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/kid-02.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/kid-03.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/kid-01.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div></div>
+    <div class="swiper-slide"> <div class="product-card">
+      <img src="img/kid-02.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div class="swiper-slide"> 
+      <div class="product-card">
+      <img src="img/kid-03.jpg" class="product-card__img" alt="men">
+      <div class="product-card__details">
+        <h1 class="product-card__details__header">Classic Spring</h1>
+        <span class="product-card__details__price">90.99$</span>
+        <ul class="product-card__details__rate">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+        </ul>
+      </div>
+     </div>
+      </div>
+      </div>
+    <div class="swiper-button-prev swiper-arrows-customize"></div>
+    <div class="swiper-button-next swiper-arrows-customize"></div>
+  </div>
+</section>
+      <hr>
+<section class="explore container">
+        <div class="explore__text-content">
+          <h2 class="explore__text-content__title">Explore Our Products</h2>
+          <p class="explore__text-content__para">
+            You are allowed to use this HexaShop HTML CSS template. You can feel free to modify or edit this layout. You can convert this template as any kind of ecommerce CMS theme as you wish.
+          </p>
+          <div class="explore__text-content__quote">
+            <i class="fa fa-quote-left"></i>
+            <p>You are not allowed to redistribute this template ZIP file on any other website.</p>
+          </div>
+          <p class="explore__text-content__para">
+            There are 5 pages included in this HexaShop Template and we are providing it to you for absolutely free of charge at our TemplateMo website. There are web development costs for us.
+          </p>
+          <p class="explore__text-content__para">
+            If this template is beneficial for your website or business, please kindly support us a little via PayPal. Please also tell your friends about our great website. Thank you.
+          </p>
+          <button class="explore__text-content__btn btn-reset">Discover more</button>
+        </div>
+        <div class="explore__images">
+          <div class="explore__images__text">
+            <h2>Leather Bags</h2>
+            <p>Latest Collection</p>
+          </div>
+          <img src="img/explore-image-01.jpg" alt="">
+          <img src="img/explore-image-02.jpg" alt="">
+          <div class="explore__images__text">
+            <h2>Different Types</h2>
+            <p>Over 304 Products</p>
+          </div>
+        </div>
+</section>
+      <hr>
+<section class="socials container">
+  <h2 class="socials__title">Social Media</h2>
+  <p class="socials__subtitle">
+    Details to details is what makes Hexashop different from the other themes.
+  </p>
+  <div class="socials__content">
+    <ul class="socials__content__items">
+      <li class="socials__content__item">
+        <div class="thumb">
+          <a href="#" class="icon">
+            <h6>
+            Fashion
+            </h6>
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <img src="img/instagram-01.jpg" alt="">
+      </li>
+      <li class="socials__content__item">
+        <div class="thumb">
+          <a href="#" class="icon">
+            <h6>
+            New
+            </h6>
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <img src="img/instagram-02.jpg" alt="">
+      </li>
+      <li class="socials__content__item">
+        <div class="thumb">
+          <a href="#" class="icon">
+            <h6>
+            Brand
+            </h6>
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <img src="img/instagram-03.jpg" alt="">
+      </li>
+      <li class="socials__content__item">
+        <div class="thumb">
+          <a href="#" class="icon">
+            <h6>
+            Makeup
+            </h6>
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <img src="img/instagram-04.jpg" alt="">
+      </li>
+      <li class="socials__content__item">
+        <div class="thumb">
+          <a href="#" class="icon">
+            <h6>
+            Leather
+            </h6>
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <img src="img/instagram-05.jpg" alt="">
+      </li>
+      <li class="socials__content__item">
+        <div class="thumb">
+          <a href="#" class="icon">
+            <h6>
+            Bag
+            </h6>
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+        <img src="img/instagram-06.jpg" alt="">
+      </li>
+    </ul>
+  </div>
+</section>
+<hr>
+<section class="subscribe container ">
+  <div class="subscribe__form">
+    <h2 class="subscribe__form__title">
+      By Subscribing To Our Newsletter You Can Get 30% Off
+    </h2>
+    <p class="subscribe__form__subtitle subtitle--highlight ">
+      Details to details is what makes Hexashop different from the other themes.
+    </p>
+    <form action="POST">
+      <input type="text" placeholder="Your Name">
+      <input type="text" placeholder="Your Email Address">
+      <button class="form__button--submit btn-reset">
+        <i class="fa fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+  <ul class="subscribe__details">
+    <li class="subscribe__details__item">
+      <h3>Store Location:</h3>
+      <p class="subtitle--highlight">
+        Sunny Isles Beach, FL 33160, United States
+      </p>
+    </li>
+  
+    
+    <li class="subscribe__details__item">
+      <h3>Work Hours:</h3>
+      <p class="subtitle--highlight">
+      07:30 AM - 9:30 PM Daily
+      </p>
+    </li>
+    <li class="subscribe__details__item">
+      <h3>Phone :</h3>
+      <p  class="subtitle--highlight">
+        010-020-0340
+      </p>
+    </li>
+  
+    <li class="subscribe__details__item">
+      <h3>
+      Email:
+      </h3>
+      <p class="subtitle--highlight">
+      info@company.com
+      </p>
+    </li>
+    
+    <li class="subscribe__details__item">
+      <h3>Office Location :</h3>
+      <p class="subtitle--highlight">
+        North Miami Beach
+      </p>
+    </li>
+    <li class="subscribe__details__item">
+      <h3>
+      Social Media:
+      </h3>
+     <p class="subtitle--highlight">
+      <a href="#">FaceBook</a>, 
+      <a href="#">Instagram</a>,
+      <a href="#">Behance</a>, 
+      <a href="#">Linkedin</a>
+     </p>
+    </li>
+  </ul>
+</section>
+    </main>
+    <footer class="footer">
+      <section class="footer__content container">
+        <div class="footer__content__upper">
+          <div class="footer__content__upper__item">
+            <img src="img/white-logo.png" alt="">
+            <ul class="item__links">
+              <li class="item__link">
+                <a href="#">16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</a>
+              </li>
+              <li class="item__link">
+                <a href="#">hexashop@company.com</a>
+              </li>
+              <li class="item__link">
+                <a href="#">010-020-0340</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content__upper__item">
+            <h2 class="item__title">Shopping & Categories</h2>
+            <ul class="item__links">
+              <li class="item__link">
+                <a href="#">Men's Shopping</a>
+              </li>
+              <li class="item__link">
+                <a href="#">Women's Shopping</a>
+              </li>
+              <li class="item__link">
+                <a href="#">Kid's Shopping</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content__upper__item">
+            <h2 class="item__title">Useful Links
+            </h2>
+            <ul class="item__links">
+              <li class="item__link">
+                <a href="#">Home Page</a>
+              </li>
+              <li class="item__link">
+                <a href="#">About Us</a>
+              </li>
+              <li class="item__link">
+                <a href="#">Help</a>
+              </li>
+              <li class="item__link">
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content__upper__item">
+            <h2 class="item__title">Help & Information
+            </h2>
+            <ul class="item__links">
+              <li class="item__link">
+                <a href="#">Help</a>
+              </li>
+              <li class="item__link">
+                <a href="#">FAQ's</a>
+              </li>
+              <li class="item__link">
+                <a href="#">Shipping</a>
+              </li>
+              <li class="item__link">
+                <a href="#">Tracking ID</a>
+              </li>
+            </ul>
+          </div>
+     
+        </div>
+        <div class="footer__content__below">
+          <p>
+            Copyright © <span class="copyright-year"></span> HexaShop Co., Ltd. All Rights Reserved. 
+            <br>
+            Redesigned By: <a href="#">Gooddevil79</a>
+            <br>
+            Distributed By: <a href="#">ThemeWagon</a>
+            <br>
+            <ul class="footer__socials">
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-telegram"></i>
+               </li>
+              <li>
+                <i class="fa-brands fa-facebook-f"></i>
+               </li>
+              <li>
+                <i class="fa-brands fa-linkedin"></i>
+               </li>
+            </ul>
+          </p>
+        </div>
+      </section>
+    </footer>
+  
+  </body>
+</html>
